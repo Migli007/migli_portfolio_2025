@@ -27,7 +27,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
         transform: `translate(-50%,-50%) skewX(-48deg) skewY(14deg) scale(1) rotate(0deg) translateZ(0)`,
       }}
       className={cn(
-        "absolute w-full h-full top-0 left-0 z-0 flex items-center justify-center",
+        "absolute w-full h-full top-0 left-0  z-0 flex items-center justify-center",
         className
       )}
       {...rest}
