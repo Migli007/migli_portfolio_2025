@@ -34,46 +34,88 @@ const Skeleton = () => (
   );
 const items = [
     {
-      title: "The Dawn of Innovation",
-      description: "Explore the birth of groundbreaking ideas and inventions.",
-      header: <Skeleton />,
+      title: " Data Analytics Professional",
+      description: "Passionate about turning data into actionable insights. Strong foundation in analytics tools and methodolgies",
+      header: (
+        <img
+          src="./bloodborne.jpg"
+          alt="Dawn of Innovation"
+          className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
+        />
+      ),
       icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Digital Revolution",
-      description: "Dive into the transformative power of technology.",
-      header: <Skeleton />,
+      title: "Completed Certifications",
+      description: "I have completed certifications on Google Data Analytics Professional, Python Data Analysis, and SQL Bootcamp",
+      header: (
+        <img
+          src="./bloodborne.jpg"
+          alt="Dawn of Innovation"
+          className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
+        />
+      ),
       icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Art of Design",
-      description: "Discover the beauty of thoughtful and functional design.",
-      header: <Skeleton />,
+      title: "Tools and platforms",
+      description: "I have an experience in using SQL, Excel, Google Sheets, Tableau, Python,  and R ",
+      header: (
+        <img
+          src="./bloodborne.jpg"
+          alt="Dawn of Innovation"
+          className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
+        />
+      ),
       icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Power of Communication",
+      title: "Analytical Strengths",
       description:
-        "Understand the impact of effective communication in our lives.",
-      header: <Skeleton />,
+        "I do have core skills on data modelling and reporting, visualization design, Extracting insights for decison-making",
+        header: (
+          <img
+            src="./bloodborne.jpg"
+            alt="Dawn of Innovation"
+            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
+          />
+        ),
       icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Pursuit of Knowledge",
-      description: "Join the quest for understanding and enlightenment.",
-      header: <Skeleton />,
+      title: "Communication Skills",
+      description: "I always make sure to have clear, accessible data communication with the stakeholders and the team.",
+      header: (
+        <img
+          src="./bloodborne.jpg"
+          alt="Dawn of Innovation"
+          className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
+        />
+      ),
       icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Joy of Creation",
-      description: "Experience the thrill of bringing ideas to life.",
-      header: <Skeleton />,
+      title: "values and Mindset",
+      description: "I focus a lot on problem-solving, continous learning, and delivering measurable business imapct.",
+      header: (
+        <img
+          src="./bloodborne.jpg"
+          alt="Dawn of Innovation"
+          className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
+        />
+      ),
       icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Spirit of Adventure",
-      description: "Embark on exciting journeys and thrilling discoveries.",
-      header: <Skeleton />,
+      title: "What Drives me",
+      description: "I want to apply analytics expertise to real-world challenges. I also want to create innovative solutions that would make an meaningful impact.",
+      header: (
+        <img
+          src="./bloodborne.jpg"
+          alt="Dawn of Innovation"
+          className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
+        />
+      ),
       icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
     },
    

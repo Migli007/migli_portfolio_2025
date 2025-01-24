@@ -11,10 +11,10 @@ const Hero = () => {
           
           <Boxes />
           <h1 className="md:text-4xl text-xl text-center text-white relative z-20">
-            Tailwind is Awesome
+            Miguel Antonio Li
           </h1>
           <p className="text-center mt-2 text-neutral-300 relative z-20">
-            Framer motion is the best animation library ngl
+            Professional Data Analyst
           </p>
         </div>
       </div>

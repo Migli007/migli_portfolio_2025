@@ -77,15 +77,6 @@ export function Certs() {
                       {active.description}
                     </motion.p>
                   </div>
-
-                  <motion.a
-                    layout
-                    href={active.ctaLink}
-                    target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
-                  >
-                    {active.ctaText}
-                  </motion.a>
                 </div>
 
                 {/* Chips */}
@@ -170,117 +161,161 @@ export function Certs() {
 
 const cards = [
   {
-    description: "Dua Lipa",
-    title: "Love Again",
-    src:  "/loveagain.jpg",
-    ctaText: "play",
+    description: "Google Data Analytics Professional Certificate 1",
+    title: "Foundations: Data, Data, Everywhere",
+    src: "/da_1.png",
+    alt: "Foundations Course Thumbnail",
+    ctaText: "Play",
     ctaLink: "https://open.spotify.com/track/4rPkN1FMzQyFNP9cLUGIIB?si=b6b8e068a508427e",
-    chips: ["Pop", "Feel Good", "2021"],
-    content: () => {
-      return (
-        <p className="font-semibold text-xl sm:text-lg">
-          never have I ever met somebody like you <br />
-          used to be afraid of love and what it might do <br />
-          but goddamn, you got me in love again <br />
-        </p>
-      );
-    },
+    chips: ["Spreadsheet", "Data Integrity", "Sample Size Determination", "SQL", "Data Cleansing"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I learned how to transform data into insights.</li>
+          <li>I gained a better understanding of the data ecosystem.</li>
+          <li>I explored creating effective outcomes using analytical thinking.</li>
+        </ul>
+      </div>
+    ),
   },
   {
-    description: "Chainsmokers ft. Coldplay",
-    title: "Something just like this ",
-    src:  "/somethinglikethis.jpg",
-    ctaText: "play",
+    description: "Google Data Analytics Professional Certificate 2",
+    title: "Ask Questions to Make Data-Driven Decisions",
+    src: "/da_2.png",
+    alt: "Ask Questions Course Thumbnail",
+    ctaText: "Play",
     ctaLink: "https://open.spotify.com/track/1dNIEtp7AY3oDAKCGg2XkH?si=2c21114249084ee5",
-    content: () => {
-      return (
-        <p className="font-semibold text-xl sm:text-lg">
-        Im not looking for somebody with superhuman gifts <br /> 
-        some superhero <br />
-        some fairy tail bliss <br />
-        just somebody I can turn to <br />
-        somebody I can kiss <br />
-        I want something just like this 
-      </p>
-      );
-    },
+    chips: ["Data Analysis", "Data Visualization", "Data Cleansing"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I learned about the problem-solving roadmap.</li>
+          <li>I explored the use of data in decision-making processes.</li>
+          <li>I studied key concepts related to structured thinking.</li>
+        </ul>
+      </div>
+    ),
   },
-
   {
-    description: "Perfect",
-    title: "Ed Sheeran",
-    src:  "/perfect.jpg",
-    ctaText: "play",
+    description: "Google Data Analytics Professional Certificate 3 ",
+    title: "Prepare Data for Exploration",
+    src: "/da_3.png",
+    alt: "Prepare Data Course Thumbnail",
+    ctaText: "Play",
     ctaLink: "https://open.spotify.com/track/3P3pw6C19j31Rnzgo3JG7o?si=a4552201b7374945",
-    content: () => {
-      return (
-        <p className="font-semibold text-xl sm:text-lg">
-        well I found a woman, stronger than anyone I know <br />
-        she shares my dreams, I hope that someday I&apos;ll share her home <br />
-        I found a lover, to carry more than just my secrets <br />
-        to carry love, to carry children of our own <br />
-      </p>
-      );
-    },
+    chips: ["Decision-Making", "Spreadsheet", "Data Analysis"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I learned about factors to consider when making decisions.</li>
+          <li>I explored best practices for organizing data.</li>
+        </ul>
+      </div>
+    ),
   },
   {
-    description: "Dionela, jay R",
-    title: "Sining",
-    src: "/sining.jpg",
-    ctaText: "play",
+    description: "Google Data Analytics Professional Certificate 4",
+    title: "Process Data from Dirty to Clean",
+    src: "/da_4.png",
+    alt: "Process Data Course Thumbnail",
+    ctaText: "Play",
     ctaLink: "https://open.spotify.com/track/1imaIe1NEAaWnLF0BY0V6F?si=fcd7e196fb284302",
-    content: () => {
-      return (
-        <p className="font-semibold text-xl sm:text-lg">
-        Ikaw ay tila sining sa museong &apos;di naluluma <br />
-        Binibini kong ginto hanggang kaluluwa <br />
-        Gonna keep you like the nu couché <br />
-        All my life<br /> <br />
-        At kung sa tingin mo na ang oras mo&apos;y lumipas na<br />
-        Ako&apos;y patuloy na mararahuyo sa ganda<br />
-        I&apos;d still kiss you every single day<br />
-        All my life
-      </p>
-      );
-    },
+    chips: ["Data Analysis", "R Markdown", "Data Visualization", "R Programming", "RStudio"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I defined different types of data integrity.</li>
+          <li>I explored SQL basic functionalities.</li>
+          <li>I verified results of data cleaning processes.</li>
+        </ul>
+      </div>
+    ),
   },
   {
-    description: "Myles Smith",
-    title: "Stargazing",
-    src: "https://kpopping.com/documents/f9/5/221113-LE-SSERAFIM-Chaewon-ANTIFRAGILE-at-Inkigayo-documents-3.jpeg?v=0e47f",
-    ctaText: "play",
+    description: "Google Data Analytics Professional Certificate 5",
+    title: "Analyze Data to Answer Questions",
+    src: "/da_5.png",
+    alt: "Analyze Data Course Thumbnail",
+    ctaText: "Play",
     ctaLink: "https://open.spotify.com/track/3Vr3zh0r7ALn8VLqCiRR10?si=2707f0b5363944e0",
-    content: () => {
-      return (
-        <p className="font-semibold text-xl sm:text-lg">
-        Take my heart, don&apos;t break it <br />
-        Love me to my bones <br />
-        All this time I wasted <br />
-        You were right there all along <br />
-        You and I stargazing <br />
-        Intertwining souls <br />
-        We were never strangers <br />
-        You were right there all along 
-      </p>
-      );
-    },
+    chips: ["Data Aggregation", "Spreadsheet", "Data Analysis", "Data Calculations", "SQL"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I learned the importance of organizing data before analysis.</li>
+          <li>I applied SQL functions and syntax to create queries.</li>
+          <li>I practiced calculations in spreadsheets using functions.</li>
+        </ul>
+      </div>
+    ),
   },
   {
-    description: "One Republic",
-    title: "Something I need",
-    src: "/something.jpg",
-    ctaText: "play",
+    description: "Google Data Analytics Professional Certificate 6",
+    title: "Share Data Through the Art of Visualization",
+    src: "/da_6.png",
+    alt: "Share Data Course Thumbnail",
+    ctaText: "Play",
     ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
-    content: () => {
-      return (
-        <p className="font-semibold text-xl sm:text-lg">
-        In this world full of people, there&apos;s one killing me <br />
-        And if we only die once, I wanna die with you <br />
-        <br />
-        If we only die once, I wanna die with<br />
-        If we only live once, I wanna live with you
-      </p>
-      );
-    },
+    chips: ["Data Collection", "Spreadsheet", "Metadata", "Data Ethics", "SQL"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I learned about creating effective data visualizations.</li>
+          <li>I practiced using Tableau for presentations.</li>
+          <li>I explored principles for impactful presentations.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    description: "Google Data Analytics Professional Certificate 7",
+    title: "Data Analysis with R Programming",
+    src: "/bloodborne.png",
+    alt: "R Programming Course Thumbnail",
+    ctaText: "Play",
+    ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
+    chips: ["Data Analysis", "RStudio", "R Programming Language", "Data Visualization", "Presentation"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I learned about R programming and its environment.</li>
+          <li>I explored methods to generate visualizations in R.</li>
+          <li>I practiced using R Markdown for formatting and structure.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    description: "Google Data Analytics Professional Certificate 8",
+    title: "Google Data Analytics Capstone",
+    src: "/bloodborne.png",
+    alt: "Capstone Course Thumbnail",
+    ctaText: "Play",
+    ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
+    chips: ["Data Analysis", "Spreadsheet", "SQL", "Data Visualization", "Data Cleansing"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I applied practices and procedures for data analysis to real-world datasets.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    description: "SQL Certificate",
+    title: "The Complete SQL Bootcamp: Go from Zero to Hero",
+    src: "/sql_cert.png",
+    alt: "SQL",
+    ctaText: "Play",
+    ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
+    chips: ["Data Analysis", "Spreadsheet", "SQL", "Data Visualization", "Data Cleansing"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I learned and practiced the different functionalities of SQL. </li>
+        </ul>
+      </div>
+    ),
   },
 ];
+

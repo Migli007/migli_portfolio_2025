@@ -9,35 +9,31 @@ export function Myprojects() {
 }
 export const projects = [
   {
-    title: "Stripe",
+    title: "Letter of Authorization (LOA) System",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
-    chips: ["Payments", "API", "Fintech"],
+      "Engineered and deployed an automated system that generates and manages Letter of Authorizations.",
+    
+    chips: ["Django", "Python", "PostgreSQL","Spreadsheets","Pandas"],
   },
   {
-    title: "Netflix",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+    title: "Medical Catalog System",
+    description: "Developed the system to upload, catalog, and automate searches for symptoms and diseases.",
+    chips: ["Django", "Python", "PostgreSQL","Spreadsheets","Pandas"],
   },
   {
-    title: "Google",
-    description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+    title: "EKonsulta Registration System",
+    description: "Developed the system to streamline the registration of Philhealth members to the Electronic Medical Record (EMR) system.",
+    chips: ["Django", "Python", "PostgreSQL","Spreadsheets","Pandas"],
   },
   {
-    title: "Meta",
-    description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+    title: "Intercontinental Energy Resources Website",
+    description:"Developed and designed the home website for Intercontinental Energy Resources inc. ",
+    chips: ["Next.JS", "React","TypeScript","Tailwind CSS", "Vercel"],
   },
   {
-    title: "Amazon",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+    title: "Capstone Project - Production Tracking System",
+    description: "Spearheaded the development of a robust production tracking system for Al Di Foods",
+    chips: ["Django", "Python","PostgreSQL"],
   },
   {
     title: "Microsoft",
