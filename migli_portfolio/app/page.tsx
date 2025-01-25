@@ -5,11 +5,10 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { Myprojects } from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import Chip from '@mui/material/Chip';
+
 import {
   IconUserFilled,
   IconBookFilled,
-  IconBooks,
   IconAddressBook,
   IconAlignBoxBottomCenter,
   IconBriefcase2Filled

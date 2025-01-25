@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -7,9 +7,9 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
-import { useRef } from "react";
 import { cn } from "@/lib/utils";
 
+// Define types for the props
 export function Button({
   borderRadius = "1.75rem",
   children,
@@ -22,20 +22,19 @@ export function Button({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: any;
+  as?: React.ElementType; // Use React.ElementType to type "as"
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any;
+  [key: string]: unknown; // Replace "any" with "unknown" for better type safety
 }) {
   return (
     <Component
-    className={cn(
+      className={cn(
         "bg-transparent relative text-xl max-h-9xl max-w-9xl p-[1px] overflow-hidden ",
         containerClassName
       )}
-      
       style={{
         borderRadius: borderRadius,
       }}
@@ -70,6 +69,7 @@ export function Button({
   );
 }
 
+// MovingBorder component with refined types
 export const MovingBorder = ({
   children,
   duration = 2000,
@@ -81,9 +81,9 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
+  [key: string]: unknown; // Replace "any" with "unknown" for better type safety
 }) => {
-  const pathRef = useRef<any>();
+  const pathRef = useRef<SVGRectElement | null>(null); // Use SVGRectElement for rect ref
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
@@ -96,11 +96,11 @@ export const MovingBorder = ({
 
   const x = useTransform(
     progress,
-    (val) => pathRef.current?.getPointAtLength(val).x
+    (val) => pathRef.current?.getPointAtLength(val).x ?? 0 // Safe fallback for undefined
   );
   const y = useTransform(
     progress,
-    (val) => pathRef.current?.getPointAtLength(val).y
+    (val) => pathRef.current?.getPointAtLength(val).y ?? 0 // Safe fallback for undefined
   );
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;

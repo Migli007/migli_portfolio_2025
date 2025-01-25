@@ -2,14 +2,12 @@
 import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useOutsideClick } from "@/hooks/use-outside-click";
+
 
 export function Certs() {
-  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
-    null
-  );
+  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(null);
   const id = useId();
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement | null>(null); // Create a reference with useRef
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -28,10 +26,10 @@ export function Certs() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
 
-  useOutsideClick(ref, () => setActive(null));
+  // useOutsideClick(ref, () => setActive(null)); // Pass the whole ref object
 
   return (
-    <div id='certs'>
+    <div id="certs">
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
@@ -47,7 +45,7 @@ export function Certs() {
           <div className="fixed inset-0 grid place-items-center z-[100]">
             <motion.div
               layoutId={`card-${active.title}-${id}`}
-              ref={ref}
+              ref={ref} // This is correct, keep the ref attached to the div
               className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
