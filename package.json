@@ -1,18 +1,29 @@
 {
+  "name": "migli_portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/material": "^6.4.1",
-    "@tabler/icons-react": "^3.29.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^12.0.5",
-    "motion": "^12.0.5",
+    "framer-motion": "^11.3.31",
+    "next": "14.2.7",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.6.0"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
