@@ -3,12 +3,12 @@ import { Meteors } from "./ui/meteors"; // Ensure the Meteors component is impor
 
 const Experience = () => {
   return (
-    <div>
+    <div id='myexp'>
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card, idx) => (
           <div
             key={idx}
-            className="relative rounded-2xl bg-gradient-to-r from-blue-500 to-teal-500 p-[1px] overflow-hidden"
+            className="relative rounded-2xl bg-gradient-to-r from-purple-900 to-blue-900 p-[1px] overflow-hidden"
           >
             {/* Card Content with Meteor Effect Inside */}
             <div className="relative z-20 bg-gray-900 border border-gray-800 p-6 rounded-2xl flex flex-col justify-end space-y-4">
@@ -33,18 +33,25 @@ const Experience = () => {
 
 const workExperience = [
   {
-    title: "Software Engineer",
-    company: "Tech Corp",
-    year: "2023",
+    title: "IT Project Management Trainee",
+    company: "Medicare Plus",
+    year: "May 2023- September 2024",
     description:
-      "Developed and maintained scalable web applications, collaborating with cross-functional teams to deliver high-quality products.",
+      "Collaborated with the team in terms of data mapping, cleaning data, and design of the backend of internal systems. Visualized data and present findings and insights to multiple stakeholders",
   },
   {
-    title: "Frontend Developer",
-    company: "Design Studio",
-    year: "2022",
+    title: "Junior Consultant",
+    company: "CGI Group",
+    year: "August 2022 - May 2023",
     description:
-      "Designed and implemented user interfaces for web applications, ensuring a seamless user experience with modern frameworks.",
+      "Led identification, measurement, and improvement initiatives for data management. Implemented modifications to designs and features of internal projects. ",
+  },
+  {
+    title: "Junior Automation Developer",
+    company: "CGI Group",
+    year: "April 2022 - July 2022",
+    description:
+      "Illustrated system designs for internal projects and created UI mock-ups for a company system. Contributed to the collaborative development of a CSR website. ",
   },
 ];
 

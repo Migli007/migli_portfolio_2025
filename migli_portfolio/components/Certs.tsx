@@ -31,7 +31,7 @@ export function Certs() {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <>
+    <div id='certs'>
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
@@ -84,7 +84,7 @@ export function Certs() {
                   {active.chips?.map((chip, index) => (
                     <span
                       key={index}
-                      className="px-2 py-1 text-xs rounded-full bg-neutral-200 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400"
+                      className="px-2 py-1 text-xs rounded-full bg-neutral-200 text-neutral-600 dark:bg-purple-900 dark:text-white"
                     >
                       {chip}
                     </span>
@@ -145,7 +145,7 @@ export function Certs() {
                 {card.chips?.map((chip, index) => (
                   <span
                     key={index}
-                    className="px-2 py-1 text-xs rounded-full bg-neutral-200 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400"
+                    className="px-2 py-1 text-xs rounded-full bg-neutral-200 text-neutral-600 dark:bg-purple-900 dark:text-white"
                   >
                     {chip}
                   </span>
@@ -155,7 +155,7 @@ export function Certs() {
           </motion.div>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 

@@ -12,7 +12,7 @@ import {
 
 const About = () => {
   return (
-    <div>
+    <div id='About'>
         <BentoGrid className=" pt-10 max-w-9xl mx-auto">
         {items.map((item, i) => (
             <BentoGridItem
@@ -38,7 +38,7 @@ const items = [
       description: "Passionate about turning data into actionable insights. Strong foundation in analytics tools and methodolgies",
       header: (
         <img
-          src="./bloodborne.jpg"
+          src="./tools.jpg"
           alt="Dawn of Innovation"
           className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
         />
@@ -50,7 +50,7 @@ const items = [
       description: "I have completed certifications on Google Data Analytics Professional, Python Data Analysis, and SQL Bootcamp",
       header: (
         <img
-          src="./bloodborne.jpg"
+          src="./books.jpg"
           alt="Dawn of Innovation"
           className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
         />
@@ -58,11 +58,11 @@ const items = [
       icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "Tools and platforms",
+      title: "Tools and Platforms",
       description: "I have an experience in using SQL, Excel, Google Sheets, Tableau, Python,  and R ",
       header: (
         <img
-          src="./bloodborne.jpg"
+          src="./data.jpg"
           alt="Dawn of Innovation"
           className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
         />
@@ -70,24 +70,25 @@ const items = [
       icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "Analytical Strengths",
+      title: "My Education",
       description:
-        "I do have core skills on data modelling and reporting, visualization design, Extracting insights for decison-making",
-        header: (
-          <img
-            src="./bloodborne.jpg"
-            alt="Dawn of Innovation"
-            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
-          />
-        ),
+        "I graduated from the University of Asia and the Pacific in August 2023 with a Bachelor of Science in Information Technology. (Photo credit: The Philippine Post, https://thepost.net.ph)",
+      header: (
+        <img
+          src="./uap.jpg" // Ensure you have permission to use and host this image locally
+          alt="University of Asia and the Pacific"
+          className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
+        />
+      ),
       icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     },
+    
     {
       title: "Communication Skills",
       description: "I always make sure to have clear, accessible data communication with the stakeholders and the team.",
       header: (
         <img
-          src="./bloodborne.jpg"
+          src="./group.jpg"
           alt="Dawn of Innovation"
           className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
         />
@@ -95,11 +96,11 @@ const items = [
       icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "values and Mindset",
+      title: "Values and Mindset",
       description: "I focus a lot on problem-solving, continous learning, and delivering measurable business imapct.",
       header: (
         <img
-          src="./bloodborne.jpg"
+          src="./light.jpg"
           alt="Dawn of Innovation"
           className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
         />
@@ -107,11 +108,11 @@ const items = [
       icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "What Drives me",
+      title: "What Drives Me",
       description: "I want to apply analytics expertise to real-world challenges. I also want to create innovative solutions that would make an meaningful impact.",
       header: (
         <img
-          src="./bloodborne.jpg"
+          src="./innovate.jpg"
           alt="Dawn of Innovation"
           className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl object-cover"
         />

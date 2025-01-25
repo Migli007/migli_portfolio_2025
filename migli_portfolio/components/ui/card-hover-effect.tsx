@@ -58,7 +58,7 @@ export const HoverEffect = ({
                 {item.chips.map((chip, chipIdx) => (
                   <span
                     key={chipIdx}
-                    className="px-3 py-1 text-xs font-medium bg-zinc-200 text-zinc-700 rounded-full dark:bg-slate-700 dark:text-zinc-300"
+                    className="px-3 py-1 text-xs font-medium bg-zinc-200 text-zinc-700 rounded-full dark:bg-blue-900 dark:text-white"
                   >
                     {chip}
                   </span>
