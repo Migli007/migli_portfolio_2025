@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-
+import { useOutsideClick } from "@/hooks/use-outside-click";
 
 export function Certs() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(null);
@@ -26,7 +26,7 @@ export function Certs() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
 
-  // useOutsideClick(ref, () => setActive(null)); // Pass the whole ref object
+  useOutsideClick(ref, () => setActive(null)); // Pass the whole ref object
 
   return (
     <div id="certs">
